@@ -1,0 +1,40 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t akkahttp-customurl:1.0 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /Users/sneh/work/codes/kreditech/target/docker/stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  128.1MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/6 : FROM openjdk:8-jre-alpine[0m
+[0m[[0m[0minfo[0m] [0m[0m8-jre-alpine: Pulling from library/openjdk[0m
+[0m[[0m[0minfo[0m] [0m[0m6c40cc604d8e: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0me78b80385239: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0mf41fe1b6eee3: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0me78b80385239: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0me78b80385239: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0m6c40cc604d8e: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0m6c40cc604d8e: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0m6c40cc604d8e: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0me78b80385239: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0mf41fe1b6eee3: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0mf41fe1b6eee3: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0mDigest: sha256:712abc7541d52998f14b43998227eeb17fd895cf10957ad5cf195217ab62153e[0m
+[0m[[0m[0minfo[0m] [0m[0mStatus: Downloaded newer image for openjdk:8-jre-alpine[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 1b46cc2ba839[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/6 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 0fd991c08611[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 0fd991c08611[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d657b178e054[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/6 : ADD --chown=daemon:daemon opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 11b6fc184442[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/6 : USER daemon[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 3b42a8ffd2d8[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 3b42a8ffd2d8[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 28899ae5d264[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/6 : ENTRYPOINT ["/opt/docker/bin/kreditech"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in a6b578009d2c[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container a6b578009d2c[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> cb2fb23d2e07[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/6 : CMD [][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 3c3a56a69a55[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 3c3a56a69a55[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 9384f7e8c8d2[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built 9384f7e8c8d2[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged akkahttp-customurl:1.0[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image akkahttp-customurl with tags [1.0][0m
